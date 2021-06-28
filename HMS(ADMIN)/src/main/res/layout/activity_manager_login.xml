@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotelimage"
+    tools:context=".Manager_Login_Activity">
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="191dp"
+        android:text="ADD NEW CATEGORY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/shapebtn"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/UpdateMenu_Button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="188dp"
+        android:text="Add new Item"
+        android:textAlignment="center"
+        android:background="@drawable/shapebtn"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button" />
+
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="138dp"
+        android:text="Orders"
+        android:background="@drawable/shapebtn"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

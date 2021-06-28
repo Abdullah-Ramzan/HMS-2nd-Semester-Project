@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterCustomerActivity">
+
+
+    //Registeration
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Registeration_view"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:text="Registeration"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+
+
+    //Name
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout_customername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        app:errorEnabled="true"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:inputType="textCapWords">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    //Email Input
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout_customeremail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:errorEnabled="true"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    //Password Input
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout_customerpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        //Image
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularimage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="88dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <ImageButton
+            android:id="@+id/registerimagebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="153dp"
+            android:layout_marginEnd="116dp"
+            android:background="@drawable/shape"
+            android:src="@drawable/ic_photo_camera" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/customer_registerbtn"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:background="@drawable/shapebtn"
+        />
+
+
+
+</LinearLayout>

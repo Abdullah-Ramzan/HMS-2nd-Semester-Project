@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Manager_CategoryActivity">
+
+    <Button
+        android:id="@+id/Button_ChooseCategoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_image"
+        android:backgroundTint="@color/colorPrimaryDark"
+
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_UpdateCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new Category"
+        android:textColor="@color/Color"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdtitText_CategoryTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:errorEnabled="true"
+        android:background="@drawable/shapebtn"
+        app:errorTextColor="#ffffff"
+        app:hintTextColor="#ffffff">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:hint="Enter Title"
+        android:inputType="textAutoCorrect">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+
+        android:id="@+id/updateCategory"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:background="@drawable/shapebtn"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
